@@ -1,0 +1,8 @@
+<div class="customer">
+    <p><span class="link"><%= link_to 'Edit', edit_customer_path(customer) %></span><span class="link"><%= link_to 'X', customer, method: :delete, data: { confirm: 'Are you sure?' } %></span></p>
+    <p class="full_name"><%= customer.full_name %></p>
+    <img width="50px" height="100px"><%= customer.image %></img>
+    <p class="content"><strong>Phone: </strong><%= customer.phone_number %></p>
+    <p class="content"><strong>Email: </strong></strong><u><%= customer.email %></u></p>    
+    <p class="content"><strong>Notes: </strong><%= customer.notes %></p>
+</div>
