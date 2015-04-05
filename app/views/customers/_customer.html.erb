@@ -5,4 +5,5 @@
     <p class="content"><strong>Phone: </strong><%= customer.phone_number %></p>
     <p class="content"><strong>Email: </strong></strong><u><%= customer.email %></u></p>    
     <p class="content"><strong>Notes: </strong><%= customer.notes %></p>
+    <p class="content"><strong>Province: </strong><%= (customer.province_id != nil) ? customer.province.name : "None" %></p>
 </div>
